@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+body {
+  overflow-x: hidden;
+  font-size: 20px;
+}
+.back-g {
+  background-color: bisque;
+  border-radius: 0.5%;
+}
+.nav-content {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.nav-left {
+  font-size: 5em;
+}
+.nav-right {
+  font-size: 3em;
+  padding-top: 1em;
+  
+}
+.fa-sharp {
+  border-right: 4px black solid;
+}
+
+.reminder {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+.reason {
+  padding-top: 2em;
+}
+
+.sect1 {
+  background-color: #1b85e1;
+  border-radius: 1%;
+  color: whitesmoke;
+}
+.note {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.listings {
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  padding: 1em;
+  font-weight: bold;
+  justify-content: space-around;
+  gap: 2em;
+  border-bottom: 2px solid black;
+}
+.mbagathi {
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+.form {
+  padding: 1em;
+}
+.flexed {
+  display: flex;
+  justify-content: space-around;
+}
+.content {
+  background-color: whitesmoke;
+  padding: 1em;
+  border-radius: 5%;
+  text-align: center;
+}
+.directors {
+  text-align: center;
+  padding-bottom: 1em;
+  color: black;
+}
+.sect3 {
+  background-color: #1b85e1;
+  border-radius: 1%;
+  padding: 1em;
+  color: whitesmoke;
+  align-items: center;
+}
+#names {
+  display: flex;
+  gap: 1em;
+}
+.btn {
+  background-color: bisque;
+  padding: 0.5em;
+  border-radius: 10%;
+  text-align: center;
+}
+fieldset {
+  color: white;
+  background-color: #1b85e1;
+  padding: 1em;
+  position: absolute;
+}
+.emerge {
+  padding: 1em;
+}
+#area {
+  width: 300px;
+  height: 150px;
+  border-style: none;
+}
+
+.procedure {
+  position: absolute center;
+
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+.cele {
+  background-color: bisque;
+  display: flex;
+  padding: 2em;
+  border-radius: 0.5%;
+  justify-content: space-around;
+}
+.patients-say {
+  text-align: center;
+  padding-bottom: 1em;
+}
+#area2 {
+  width: 300px;
+  height: 150px;
+  border-style: none;
+  background-color: bisque;
+}
+#jina {
+  background-color: bisque;
+  border-style: none;
+  padding: 1em;
+}
+.btn2 {
+  text-align: center;
+}
+.icons {
+  text-align: center;
+}
+.field {
+  color: black;
+}
+.confirmation {
+  display: flex;
+  justify-content: space-around;
+}
+.footer2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+  gap: 6em;
+  border-bottom: 2px solid black;
+}
+.footer {
+  background-color: whitesmoke;
+  border-radius: 5%;
+  padding: 1em;
+}
+.footer3 {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  border-bottom: 1px solid black;
+}
+.last-paragraph {
+  padding: 1em;
+}
+.buttons {
+  color: white;
+  padding: 1em;
+  background-color: #1b85e1;
+  border: 1px solid #1b85e1;
+  border-radius: 5%;
+}
+.icon{
+  text-align: center;
+  padding-top: 1em;
+}
