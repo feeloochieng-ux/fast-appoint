@@ -1,76 +1,18 @@
-const selectListing= document.querySelectorAll(".list");
+const selectlist = document.querySelectorAll(".list1");
 
-const services = document.querySelectorAll(".content");
+const serviceCategories = document.querySelectorAll(".sect");
 
-for (let service of services) {
-  if (service.classList.contains("mbaga")) {
-    service.style.display = "flex";
-  } else {
-    service.style.display = "none";
-  }
-}
-// for (let list of selectListing) {
-//   if (list.textContent.toLowerCase() === "mbagathi hospital") {
-//     list.classList.add("selected");
+ for(let list of selectlist){
+if (list.)
+//  }
+// for (let tab of selectTabs) {
+//   if (tab.textContent.toLowerCase() === "chicken pizza") {
+//     tab.classList.add("active");
 //   }
-//   list.addEventListener("click", function () {
-//         for (let list of selectListings) {
-//       if (list.classList.contains("selected")) {
-//         list.classList.remove("selected");
+//   tab.addEventListener("click", function () {
+//     console.log(tab.textContent);
+//     for (let tab of selectTabs) {
+//       if (tab.classList.contains("active")) {
+//         tab.classList.remove("active");
 //       }
 //     }
-//     list.classList.add("selected");
-//     const listName=list.textContent.toLowerCase()
-//     if(listName==="Makadara Hospital"){
-//         for (let category of pizzaCategories) {
-//   if (category.classList.contains("margherita")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
-//     }
-//     else if(tabName==="pepperoni"){
-//         for (let category of pizzaCategories) {
-//   if (category.classList.contains("pepperoni")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
-//     }
-//     else if(tabName==="chicken pizza"){
-//   for (let category of pizzaCategories) {
-//   if (category.classList.contains("chicken_pizza")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
-//     }
-//     else if(tabName==="meat lover's pizza"){
-       
-//         for (let category of pizzaCategories) {
-//   if (category.classList.contains("meat")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
-//     }
-//      else if(tabName==="hawaiian"){
-       
-//         for (let category of pizzaCategories) {
-//   if (category.classList.contains("hawaiian")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
-//     }
-//   });
-
-// }
-
-
-

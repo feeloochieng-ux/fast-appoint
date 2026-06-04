@@ -18,8 +18,7 @@ body {
 .nav-content {
   background-color: whitesmoke;
   display: flex;
-  justify-content: space-around;
-  
+  justify-content: space-between;
 }
 .nav-left {
   font-size: 5em;
@@ -27,7 +26,7 @@ body {
 .nav-right {
   font-size: 3em;
   padding-top: 1em;
-  
+  text-align: center;
 }
 .fa-sharp {
   border-right: 4px black solid;
@@ -63,8 +62,6 @@ body {
 }
 .mbagathi {
   padding-top: 2em;
-  display: flex;
-  justify-content: space-around;
 }
 .form {
   padding: 1em;
@@ -186,12 +183,12 @@ fieldset {
   border: 1px solid #1b85e1;
   border-radius: 5%;
 }
-.icon{
+.icon {
   text-align: center;
   padding-top: 1em;
 }
-.selected{
-  color:#1b85e1;
+.selected {
+  color: #1b85e1;
   border-bottom: 3px solid #1b85e1;
-  padding-bottom :1em ;
+  padding-bottom: 1em;
 }
