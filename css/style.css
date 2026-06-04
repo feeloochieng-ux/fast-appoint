@@ -55,7 +55,7 @@ body {
   text-align: center;
   list-style-type: none;
   display: flex;
-  padding: 1em;
+  padding-top: 1em;
   font-weight: bold;
   justify-content: space-around;
   gap: 2em;
@@ -189,4 +189,9 @@ fieldset {
 .icon{
   text-align: center;
   padding-top: 1em;
+}
+.selected{
+  color:#1b85e1;
+  border-bottom: 3px solid #1b85e1;
+  padding-bottom :1em ;
 }
