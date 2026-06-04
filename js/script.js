@@ -7,23 +7,22 @@ for (let list of selectlist) {
     list.classList.add("selected");
   }
   list.addEventListener("click", function () {
-    
     for (let list of selectlist) {
       if (list.classList.contains("selected")) {
         list.classList.remove("selected");
       }
     }
-    list.classList.add("selected")
-    const listName=list.textContent.toLocaleLowerCase()
-    if (listName==="mbagathi"){
-        for(let category of serviceCategories){
-            if(category.classList.contains("mbagathi")){
-                    category.computedStyleMap.display = "flex"
-            }
+    list.classList.add("selected");
+    const listName = list.textContent.toLocaleLowerCase();
+    if (listName === "mbagathi hospital") {
+      for (let category of serviceCategories) {
+        if (category.classList.contains("mbagathi")) {
+          category.Style.display = "flex";
+        } else {
+          category.style.display = "none";
         }
+      }
     }
-
-
   });
 }
 // tab.classList.add("active");
@@ -56,7 +55,7 @@ for (let list of selectlist) {
 // }
 //     }
 //     else if(tabName==="meat lover's pizza"){
-       
+
 //         for (let category of pizzaCategories) {
 //   if (category.classList.contains("meat")) {
 //     category.style.display = "flex";
@@ -66,7 +65,7 @@ for (let list of selectlist) {
 // }
 //     }
 //      else if(tabName==="hawaiian"){
-       
+
 //         for (let category of pizzaCategories) {
 //   if (category.classList.contains("hawaiian")) {
 //     category.style.display = "flex";
@@ -75,6 +74,3 @@ for (let list of selectlist) {
 //   }
 // }
 //     }
- 
-
-

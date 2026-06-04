@@ -18,7 +18,7 @@ body {
 .nav-content {
   background-color: whitesmoke;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .nav-left {
   font-size: 5em;
@@ -60,10 +60,8 @@ body {
   gap: 2em;
   border-bottom: 2px solid black;
 }
-.mbagathi {
-  padding-top: 2em;
-  display: flex;
-}
+
+
 .form {
   padding: 1em;
 }
@@ -192,4 +190,9 @@ fieldset {
   color: #1b85e1;
   border-bottom: 3px solid #1b85e1;
   padding-bottom: 1em;
+}
+.sect{
+  display :flex;
+   justify-content: space-around;
+   padding-top: 1em;
 }
