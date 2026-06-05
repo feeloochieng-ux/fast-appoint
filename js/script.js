@@ -2,13 +2,13 @@ const selectList = document.querySelectorAll(".list1");
 
 const serviceCategories = document.querySelectorAll(".sect");
 
-// for (let category of serviceCategories) {
-//   if (category.classList.contains("mbagathi")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
+for (let category of serviceCategories) {
+  if (category.classList.contains("mbagathi")) {
+    category.style.display = "flex";
+  } else {
+    category.style.display = "none";
+  }
+}
 
 // for (let list of selectList) {
 //   if (list.textContent.toLowerCase() === "mbagathi hospital") {
