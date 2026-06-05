@@ -206,10 +206,17 @@ fieldset {
   color: orange;
   text-align: center;
 }
-.btn-book{
+.book-btn{
+  
   color: white;
   background: orange;
   padding: 1em;
   margin: 1em;
   border-radius: 7%;
 }
+.btn-book{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+ 

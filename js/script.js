@@ -57,3 +57,21 @@ for (let list of selectList) {
     }
   });
 }
+
+
+// const myIcons =document.querySelectorAll(".icons")
+
+
+
+
+
+// for (let icon of myIcons) {
+//   if (icon.classList.contains ("icons")) {
+//     list.classList.add("");
+//   }
+//   list.addEventListener("click", function () {
+//     for (let list of selectList) {
+//       if (list.classList.contains("selected")) {
+//         list.classList.remove("selected");
+//       }
+//     })
