@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospitalform -FirstAppoint</title>
+    <link rel="stylesheet" href="hospitalform.css">
+  </head>
+  <body>
+    <div class="page" id="page-register-hospital">
+      <div class="form-wrap" style="max-width: 640px">
+        <h2>Register Your Hospital</h2>
+        <p class="sub">
+          Complete the form and choose a subscription plan. Our admin will
+          review and approve your listing.
+        </p>
+        <div id="regHospErr" class="error-msg" style="display: none"></div>
+        <div
+          id="regHospSuccess"
+          style="display: none"
+          class="success-msg"
+        ></div>
+
+        <div id="regHospForm">
+          <h4 style="margin-bottom: 1rem; font-size: 1rem">
+            1. Facility Information
+          </h4>
+          <div class="field">
+            <label>Hospital / Facility Name</label
+            ><input id="hName" placeholder="e.g. City Health Clinic" />
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>Location</label
+              ><input id="hLocation" placeholder="Nairobi area" />
+            </div>
+            <div class="field">
+              <label>Phone Number</label
+              ><input id="hPhone" placeholder="+254..." />
+            </div>
+          </div>
+          <div class="field">
+            <label>Email Address</label
+            ><input type="email" id="hEmail" placeholder="info@hospital.com" />
+          </div>
+          <div class="field">
+            <label>Services Offered (comma-separated)</label
+            ><input
+              id="hServices"
+              placeholder="e.g. Eye Unit, Maternity, Radiology"
+            />
+          </div>
+          <div class="field">
+            <label>Operating Hours</label
+            ><input id="hHours" placeholder="e.g. Open Full-Day / 24-hours" />
+          </div>
+          <div class="field">
+            <label>Brief Description</label
+            ><textarea
+              id="hDesc"
+              placeholder="Tell patients what makes your facility special..."
+            ></textarea>
+          </div>
+
+          <hr
+            style="
+              border: none;
+              border-top: 1px solid var(--blue-light);
+              margin: 1.5rem 0;
+            "
+          />
+          <h4 style="margin-bottom: 0.5rem; font-size: 1rem">
+            2. Credentials (links or document references)
+          </h4>
+          <div class="row2">
+            <div class="field">
+              <label>Operating License</label
+              ><input
+                id="hLicense"
+                placeholder="Annual license number or link"
+              />
+            </div>
+            <div class="field">
+              <label>Facility Registration Cert.</label
+              ><input id="hRegCert" placeholder="Certificate number or link" />
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label>Company Documents (CR12)</label
+              ><input id="hCR12" placeholder="CR12 / PIN of Directors" />
+            </div>
+            <div class="field">
+              <label>Practitioner Licences</label
+              ><input id="hPractLic" placeholder="Doctors & Staff licences" />
+            </div>
+          </div>
+
+          <hr
+            style="
+              border: none;
+              border-top: 1px solid var(--blue-light);
+              margin: 1.5rem 0;
+            "
+          />
+          <h4 style="margin-bottom: 0.5rem; font-size: 1rem">
+            3. Admin Account
+          </h4>
+          <div class="field">
+            <label>Admin Email (for your hospital dashboard)</label
+            ><input
+              type="email"
+              id="hAdminEmail"
+              placeholder="admin@yourhospital.com"
+            />
+          </div>
+          <div class="field">
+            <label>Admin Password</label
+            ><input
+              type="password"
+              id="hAdminPass"
+              placeholder="At least 6 characters"
+            />
+          </div>
+
+          <hr
+            style="
+              border: none;
+              border-top: 1px solid var(--blue-light);
+              margin: 1.5rem 0;
+            "
+          />
+          <h4 style="margin-bottom: 1rem; font-size: 1rem">
+            4. Choose Subscription Plan
+          </h4>
+          <div class="plan-options" id="planOptions">
+            <div
+              class="plan-card chosen"
+              data-plan="basic"
+              onclick="selectPlan(this)"
+            >
+              <div class="price">KES 2,500</div>
+              <div class="period">/ month</div>
+              <div
+                style="font-size: 0.85rem; margin-top: 0.5rem; font-weight: 600"
+              >
+                Basic
+              </div>
+              <div style="font-size: 0.78rem; color: var(--mid)">
+                1 service listed
+              </div>
+            </div>
+            <div
+              class="plan-card"
+              data-plan="standard"
+              onclick="selectPlan(this)"
+            >
+              <div class="price">KES 5,000</div>
+              <div class="period">/ month</div>
+              <div
+                style="font-size: 0.85rem; margin-top: 0.5rem; font-weight: 600"
+              >
+                Standard
+              </div>
+              <div style="font-size: 0.78rem; color: var(--mid)">
+                Up to 5 services
+              </div>
+            </div>
+            <div
+              class="plan-card"
+              data-plan="premium"
+              onclick="selectPlan(this)"
+            >
+              <div class="price">KES 9,000</div>
+              <div class="period">/ month</div>
+              <div
+                style="font-size: 0.85rem; margin-top: 0.5rem; font-weight: 600"
+              >
+                Premium
+              </div>
+              <div style="font-size: 0.78rem; color: var(--mid)">
+                Unlimited services + featured
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-box">
+            <h4>💳 Payment (Simulated)</h4>
+            <p
+              style="
+                font-size: 0.85rem;
+                color: var(--mid);
+                margin: 0.3rem 0 1rem;
+              "
+            >
+              In production this integrates with M-Pesa / card. For now, click
+              Pay to simulate payment.
+            </p>
+            <div class="field">
+              <label>M-Pesa / Card Number</label
+              ><input
+                id="hPayNum"
+                placeholder="e.g. 0712345678 or card number"
+              />
+            </div>
+            <button
+              class="submit-btn"
+              style="max-width: 220px; margin: 0 auto"
+              onclick="submitHospitalReg()"
+            >
+              Pay & Submit Application
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  /* padding: 0; */
+  padding: 0;
   box-sizing: border-box;
 }
 .container {
@@ -21,7 +21,8 @@ body {
   justify-content: space-around;
 }
 .nav-left {
-  font-size: 5em;
+  font-size: 1em;
+  
 }
 .nav-right {
   font-size: 3em;
@@ -65,9 +66,14 @@ body {
 .form {
   padding: 1em;
 }
+.form ul{
+  list-style-type: none;
+}
 .flexed {
   display: flex;
-  justify-content: space-around;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 .content {
   background-color: whitesmoke;
@@ -195,4 +201,15 @@ fieldset {
   display :flex;
    justify-content: space-around;
    padding-top: 1em;
+}
+.para{
+  color: orange;
+  text-align: center;
+}
+.btn-book{
+  color: white;
+  background: orange;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 7%;
 }

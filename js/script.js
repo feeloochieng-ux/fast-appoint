@@ -1,76 +1,59 @@
-const selectlist = document.querySelectorAll(".list1");
+const selectList = document.querySelectorAll(".list1");
 
 const serviceCategories = document.querySelectorAll(".sect");
 
-for (let list of selectlist) {
-  if (list.textContent.toLocaleLowerCase() === "mbagathi hospital") {
-    list.classList.add("selected");
-  }
-  list.addEventListener("click", function () {
-    for (let list of selectlist) {
-      if (list.classList.contains("selected")) {
-        list.classList.remove("selected");
-      }
-    }
-    list.classList.add("selected");
-    const listName = list.textContent.toLocaleLowerCase();
-    if (listName === "mbagathi hospital") {
-      for (let category of serviceCategories) {
-        if (category.classList.contains("mbagathi")) {
-          category.Style.display = "flex";
-        } else {
-          category.style.display = "none";
-        }
-      }
-    }
-  });
-}
-// tab.classList.add("active");
-//     const tabName=tab.textContent.toLowerCase()
-//     if(tabName==="margherita"){
-//         for (let category of pizzaCategories) {
-//   if (category.classList.contains("margherita")) {
+// for (let category of serviceCategories) {
+//   if (category.classList.contains("mbagathi")) {
 //     category.style.display = "flex";
 //   } else {
 //     category.style.display = "none";
 //   }
 // }
-//     }
-//     else if(tabName==="pepperoni"){
-//         for (let category of pizzaCategories) {
-//   if (category.classList.contains("pepperoni")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
-//     }
-//     else if(tabName==="chicken pizza"){
-//   for (let category of pizzaCategories) {
-//   if (category.classList.contains("chicken_pizza")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
-//     }
-//     else if(tabName==="meat lover's pizza"){
 
-//         for (let category of pizzaCategories) {
-//   if (category.classList.contains("meat")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
+// for (let list of selectList) {
+//   if (list.textContent.toLowerCase() === "mbagathi hospital") {
+//     list.classList.add("selected");
 //   }
-// }
+//   list.addEventListener("click", function () {
+//     for (let list of selectList) {
+//       if (list.classList.contains("selected")) {
+//         list.classList.remove("selected");
+//       }
 //     }
-//      else if(tabName==="hawaiian"){
-
-//         for (let category of pizzaCategories) {
-//   if (category.classList.contains("hawaiian")) {
-//     category.style.display = "flex";
-//   } else {
-//     category.style.display = "none";
-//   }
-// }
+//     list.classList.add("selected");
+//     const listName = list.textContent.toLowerCase();
+//     if (listName === "mbagathi hospital") {
+//       for (let category of serviceCategories) {
+//         if (category.classList.contains("mbagathi")) {
+//           category.style.display = "flex";
+//         } else {
+//           category.style.display = "none";
+//         }
+//       }
+//     } else if (listName === "makadara hospital") {
+//       for (let category of serviceCategories) {
+//         if (category.classList.contains("makadara")) {
+//           category.style.display = "flex";
+//         } else {
+//           category.style.display = "none";
+//         }
+//       }
+//     } else if (listName === "kenyatta hospital") {
+//       for (let category of serviceCategories) {
+//         if (category.classList.contains("kenyatta")) {
+//           category.style.display = "flex";
+//         } else {
+//           category.style.display = "none";
+//         }
+//       }
+//     } else if (listName === "Kibera-south hospital") {
+//       for (let category of serviceCategories) {
+//         if (category.classList.contains("kibra")) {
+//           category.style.display = "flex";
+//         } else {
+//           category.style.display = "none";
+//         }
+//       }
 //     }
+//   });
+// }
