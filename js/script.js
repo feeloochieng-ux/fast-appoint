@@ -46,7 +46,7 @@ for (let list of selectList) {
           category.style.display = "none";
         }
       }
-    } else if (listName === "Kibera-south hospital") {
+    } else if (listName === "kibera-south hospital") {
       for (let category of serviceCategories) {
         if (category.classList.contains("kibra")) {
           category.style.display = "flex";
